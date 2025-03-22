@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+.aider*
+data/*
+*.db
+server/data/*

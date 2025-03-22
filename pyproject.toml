@@ -5,5 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "aiosqlite>=0.21.0",
+    "fastapi[standard]>=0.115.12",
     "matplotlib>=3.10.1",
+    "pandas>=2.2.3",
+    "rich>=13.9.4",
+    "scipy>=1.15.2",
+    "structlog>=25.2.0",
+    "uvicorn>=0.34.0",
 ]

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: joule-deployment
+  labels:
+    app: joule
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: joule
+  template:
+    metadata:
+      labels:
+        app: joule
+    spec:
+      containers:
+      - name: joule
+        imagePullPolicy: IfNotPresent
+        image: joule:1.0
+        ports:
+        - containerPort: 8000
